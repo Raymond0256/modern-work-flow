@@ -18,6 +18,7 @@ requests = "^2.24.0"
 pytest = "^5.4.3"
 coverage = {extras = ["toml"], version = "^5.1"}
 pytest-cov = "^2.10.0"
+pytest-mock = "^3.1.1"
 
 [tool.poetry.scripts]
 modern-work-flow = "modern_work_flow.console:main"
