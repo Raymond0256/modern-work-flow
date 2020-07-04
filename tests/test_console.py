@@ -28,3 +28,8 @@ def test_main_succeeds(runner, mock_request_get):
 def test_main_prints_title(runner, mock_request_get):
     result = runner.invoke(console.main)
     assert "Lorem Ipsum" in result.output
+
+
+def test_main_invokes_requests_get(runner, mock_request_get):
+    runner.invoke(console.main)
+    assert mock_request_get.called
