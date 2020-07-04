@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "modern-work-flow"
+version = "0.1.0"
+authors = ["Raymond Lewis <Raymond0256@gmail.com>"]
+description = "My modern python work flow."
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/raymond0256/modern-work-flow"
+repository = "https://github.com/raymond0256/modern-work-flow"
+keywords = ["modern", "python", "work-flow"]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
