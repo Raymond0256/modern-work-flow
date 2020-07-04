@@ -33,3 +33,9 @@ def test_main_prints_title(runner, mock_request_get):
 def test_main_invokes_requests_get(runner, mock_request_get):
     runner.invoke(console.main)
     assert mock_request_get.called
+
+
+def test_main_uses_en_wikipedia_org(runner, mock_request_get):
+    runner.invoke(console.main)
+    args, _ = mock_request_get.call_args
+    assert "en.wikipedia.org" in args[0]
